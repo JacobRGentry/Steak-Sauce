@@ -1,3 +1,4 @@
+import curses
 from os import system
 def cls():
     system('cls')
@@ -137,7 +138,7 @@ while running:
                     list.close()
                     break
                 else:
-                    addition == addition + "\n" 
+                    addition == addition + "\n"
                     todo[str(a)] = addition
                     a += 1
                     #print(todo) For testing purposes
@@ -178,7 +179,7 @@ while running:
         for x, y in todo.items():
             lines = x + ". " + y + "\n"
             list.writelines(lines)
-        list.close()        
+        list.close()
         break
     #Read about Steak Sauce
     elif selection =="5":
@@ -186,7 +187,7 @@ while running:
     #Exit
     elif selection == "6":
         running = False
-    elif selection == "316":    
+    elif selection == "316":
         print(todo)
     else:
         print("Sorry. Please make sure you enter a valid number.")
